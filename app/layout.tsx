@@ -1,6 +1,7 @@
 import { Header } from '@/components/shared';
 import '../styles/globals.css';
 import { Nunito_Sans } from 'next/font/google';
+import Footer from '@/components/shared/footer';
 
 const nunito = Nunito_Sans({
 	subsets: ['cyrillic'],
@@ -21,6 +22,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 				<main className="min-h-screen">
 					{children}
 				</main>
+				<Footer/>
 			</body>
 		</html>
 	);
